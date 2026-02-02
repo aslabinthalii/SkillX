@@ -5,7 +5,6 @@
     font-family: 'Poppins', sans-serif;
 }
 .main{
-    /* background-color: #0F172A; */
     background-image: url(./image/main.png);
     background-repeat: no-repeat;
     background-size: cover;
@@ -146,17 +145,86 @@
     padding: 20px;
     display: flex;
     justify-content: space-between;
+ 
+}
+.over-view-container{
+    background-image: url(./image/MERN_Stack.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;  
+    width: 95%;
+    margin: auto;
+    height: 500px;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    padding-top: 80px;
+    margin-top: 50px;
+    margin-bottom: 50px;
 }
 .overview h1{
-    color: white;
-
+    margin-left: 50px;
 }
 .overview p{
-    width: 700px;
-}
-.overview img{
     width: 500px;
+    padding: 50px;
 }
+.roadmap-btns{
+    width:50%;
+    margin: 50px auto;
+     display: flex;
+    justify-content: center; 
+    align-items: center;
+    gap: 20px;
+    padding: 50px;
+
+}
+
+
+.road-map h1{
+    color: #fff;
+    text-align: center;
+    padding-bottom: 30px;
+}
+.road-map img{
+ width: 100%;   
+}
+
+.road-map-icons{
+    display: flex;
+    gap: 10px;
+    color: #fff;
+    width: 80%;
+    margin: auto;
+}
+.fa{
+    text-decoration: none;
+    border: 1px solid blue;
+    padding: 5px;
+    color: #fff;
+    background: transparent;
+}
+
+.ro{
+    text-align: center;
+    width: 150px;    
+    
+}
+.ro p,h2{
+    white-space: nowrap;
+}
+.fa-solid{
+    color: #fff;
+    padding: 10px;
+}
+.ro h2{
+    font-size: 20px;
+}
+.ro h1{
+    font-size: 20px;
+}
+
+
 .cards{
     display: grid;
     grid-template-columns:repeat(4,250px);
@@ -207,8 +275,11 @@
 }
 .footer{
 color: #fff;
+    background-color: navy;
+
 }
 .footer-container{
+    padding-top: 50px;
     display: flex;
     justify-content: space-around;
 }
@@ -236,4 +307,97 @@ color: #fff;
 }
 .footer-logo a img{
     height: 30px;
+}
+.platform-container{
+    display: grid;
+    grid-template-columns: repeat(2, minmax(250px, 350px));
+    justify-content: center;
+    gap: 80px;
+     max-width: 900px;   /* 👈 add this */
+    margin:50px auto; 
+}
+.platform h1{
+    text-align: center;
+    color: #fff;
+}
+.platform{
+    width: 90%;
+    margin: auto;
+}
+.mern{
+  width: 90%;
+  margin: 40px auto;
+}
+
+.path{
+  text-align: center;
+  margin-bottom: 30px;
+  color: #fff;
+}
+
+
+.courses{
+  display: grid;
+  grid-template-columns: repeat(3, minmax(260px, 1fr));
+  gap: 25px;
+}
+
+
+.course{
+  background: white;
+  padding: 20px;
+  border-radius: 15px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+.course h1{
+  font-size: 20px;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+
+.course a{
+  display: block;
+  margin-top: 8px;
+  text-decoration: none;
+  color: #007bff;
+  font-size: 14px;
+}
+.course .download,
+.course a:last-child{
+  display: block;
+  width: fit-content;
+  margin: 12px auto 0 auto; 
+  padding: 8px 14px;
+  background: #ff6b00;
+  color: white;
+  border-radius: 8px;
+  text-align: center;
+}
+
+
+
+.study{
+    border-radius: 20px;
+    background-color: white;
+    padding: 20px;
+    width: 400px;
+}
+.study-h{
+    display: flex;
+}
+.fa-check{
+    color: black;
+}
+.fa-dot{
+    color: #F97316;
+}
+.pp{
+  padding: 20px;
+}
+
+.study-p{
+white-space:nowrap;
+
 }
