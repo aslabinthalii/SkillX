@@ -1,0 +1,42 @@
+body{
+    
+    margin: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url(./image/main.png);
+}
+.sighnup{
+     background-color: white;
+    width: 320px;
+    padding: 40px;
+    border-radius: 10px;
+    text-align: center;
+}
+.items{
+     border: 1px solid #ddd;
+    padding: 50px;
+}
+.sighnup h1{
+     margin-bottom: 20px;
+}
+input{
+    width: 80%;
+    padding: 10px;
+    margin: 10px ;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    font-size: 14px;
+    
+}
+button {
+    width: 50%;
+    padding: 12px;
+    background: green;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+}
