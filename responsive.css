@@ -16,10 +16,12 @@
 .home{
     text-align: center;
     background-position: center;
+    background-position: bottom;
+    padding: 100px auto;
 }
+
 .home h1{
     font-size: 50px;
-    margin-top: -150px !important;
 }
 .footer-container{
     display: block;
@@ -39,19 +41,32 @@
 }
 .fa-bars{
   display: block !important;
+  font-size: 24px;
+    cursor: pointer;
 }
 .nav-btns a{
   display: none !important;
 }
-
+.overview h1{
+    margin-left: 10px;
+}
 
 .home{
    background-image: url(./image/main.png);
 }
-.footer-container p{
-    text-align: center;
+.footer-box p{
+  margin: 20px auto;
 }
-
+}
+@media(max-width:750px){
+  .fa-bars{
+  display: block !important;[]
+  font-size: 24px;
+    cursor: pointer;
+}
+.nav-btns a{
+  display: none !important;
+}
 }
 @media(max-width :700px){
    
@@ -64,8 +79,22 @@
 .over-view-container h1{
     text-align: center;
 }
+.home{
+   background-image: url(./image/main.png);
 
+}
 
+}
+@media(max-width:690px){
+  .roadmap-btns a{
+    font-size: 10px;
+  }
+}
+@media(max-width:493px){
+  .roadmap-btns a{
+    font-size: 8px !important;
+    padding: 5px;
+  }
 }
 
 @media (max-width:750px){
@@ -98,6 +127,28 @@
     gap: 15px;
     }
 }
+@media (max-width:900px){
+   .footer-container{
+    display: block;
+    text-align: center;
+   }
+   .footer-box p{
+  margin:20px auto;
+}
+}
+@media (max-width:850px){
+    .home h1{
+      font-size: 50px;
+    }
+    .home p{
+      margin-bottom: 20px;
+    }
+}
+@media (max-width:493px){
+  .roadmap-btns a{
+    font-size: 10px;
+  }
+}
 @media (max-width:375px){
   .over-view-container p{
     width: auto;
@@ -106,11 +157,17 @@
     display: none;
   }
   .roadmap-btns a{
-    font-size: 5px;
+    font-size: 5px !important;
   }
 
 
+
   
+}
+@media (max-width:480px){
+   .get-started h1{
+    font-size: 30px;
+   }
 }
 
 

@@ -13,6 +13,7 @@
 .navbar{
     width: 100%;
     position: sticky;
+    position: relative;
     z-index: 1000;
     display: flex;
     align-items: center;
@@ -36,7 +37,7 @@
 }
 
 
-.nav_items{
+.nav-items{
     display: flex;
     gap: 20px;
     align-items: center;
@@ -96,8 +97,42 @@
     font-weight: bold;
     width: auto;
 }
+.mob-nav{
+    display: none;
+}
+.mob-nav{
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    background-color: #1E3A5F;
+    padding: 15px 0;
+
+}
+
+.mob-nav.active{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+    
+}
+.mob-nav a{
+    text-decoration:none;
+    color: #fff;
+
+}
+.fa-bars.hide {
+  display: none;
+}
+
+.x{
+    display: none;
+}
+
 .fa-bars{
-    display: none !important;
+    display: none ;
 }
 .nav-btns .log{
     background-color: white;
@@ -109,9 +144,9 @@
 
 .home{
     background-image:url("./image/hero.png");
-    height: 700px;
+    padding: 120px 8%;
     background-size: cover;
-    background-position:right center;
+    background-position:center;
     background-repeat: no-repeat;
     display: flex;
     flex-direction: column;
@@ -121,15 +156,15 @@
 .home h1{
     color: white;
     font-size: 70px;
-    margin-left: 50px;
-    padding-top: 220px;
+    margin-left: 10px;
+    padding-top: 8px;
 
 }
 .home h1 span{
     color: #4ADE80;
 }
 .get{
-    margin-left: 50px;
+    margin-left: 10px;
     padding: 12px ;
     background-color: #F97316;
     width: 150px;
@@ -142,7 +177,7 @@
 }
 .home p{
     color: white;
-    margin-left: 50px;
+    margin-left: 10px;
 }
 .overview{
     padding: 20px;
@@ -160,8 +195,8 @@
     border-radius: 20px;
     display: flex;
     flex-direction: column;
-    padding-top: 80px;
-    margin-top: 50px;
+    padding: 60px;
+    margin-top: 50px;   
     margin-bottom: 50px;
 }
 .over-view-container p{
@@ -324,7 +359,7 @@ color: #fff;
     color: #fff;
     text-decoration: none;
     width: 20%;
-    margin:20px auto;
+    margin:5px auto 20px;
   
 }
 .footer-logo a img{
