@@ -1,85 +1,121 @@
+@media(max-width :600px){
+    .pages{
+        display: none;
 
-@media (max-width: 992px) {
-  .courses {
-    grid-template-columns: repeat(2, 1fr);
-    gap: 20px;
+    }
+    .navbar {
+    padding: 10px;
   }
+.courses{
+    grid-template-columns: 1fr !important;
+}
+.platform-container{
+    grid-template-columns: 1fr;
+    gap: 20px;
+}
+.home{
+    text-align: center;
+    background-position: center;
+}
+.home h1{
+    font-size: 50px;
+    margin-top: -150px !important;
+}
+.footer-container{
+    display: block;
+    text-align: center;
+}
+.get-started h1{
+    text-align: center;
+}
+.roadmap-btns a{
+    font-size: 10px;
+
+
+}
+.get-btn{
+    display: flex;
+    justify-content: center;
+}
+.fa-bars{
+  display: block !important;
+}
+.nav-btns a{
+  display: none !important;
 }
 
 
-@media (max-width: 600px) {
-  .courses {
-    grid-template-columns: 1fr;
-    gap: 15px;
-  }
-  .home{
-    background-image: url(./image/main.png);
-  }
-  .home p{
-    text-align: center;
-  }
-  .course {
-    padding: 15px;
-  }
-
-  .course h1 {
-    font-size: 18px;
-  }
-
-  .course a {
-    font-size: 13px;
-  }
-
-  .course .download,
-  .course a:last-child {
-    padding: 6px 12px;
-    font-size: 14px;
-  }
-  .platform-container {
-    grid-template-columns: 1fr;
-    gap: 20px;
-  }
-  .get-started h1{
-    text-align: center;
-  }
-
-  .study {
-    padding: 18px;
-  }
-
-  .study-h h2 {
-    font-size: 18px;
-  }
+.home{
+   background-image: url(./image/main.png);
 }
-@media (max-width:742px){
+.footer-container p{
+    text-align: center;
+}
+
+}
+@media(max-width :700px){
+   
+.courses{
+    grid-template-columns:repeat(2,1fr)
+}
+.over-view-container p{
+    text-align: center;
+}
+.over-view-container h1{
+    text-align: center;
+}
+
+
+}
+
+@media (max-width:750px){
   .pages{
     display: none;
   }
-  .home h1,.p{
-    font-size: 50px;
-    text-align: center;
-  }
-  .nav-btns a{
-    text-align: center;
-  }
   .get-btn{
-    width: 200px;
-    margin: auto;
+    display: flex;
+    justify-content: center;
+  }
+  .home h1,p{
+    text-align: center;
   }
 }
-@media (max-width:690px){
-  .roadmap-btns{
-    font-size: 12px;
-  }
-}
-@media (max-width:558px){
-  .roadmap-btns{
-    font-size: 8px;
-  }
+
+@media(max-width:668px){
+    .roadmap-btns a{
+    font-size: 10px;
+
 
 }
-@media (max-width:427px){
-  .roadmap-btns{
-    padding: 5px;
-  }
+.pages{
+  display: none;
 }
+}
+
+@media (max-width:992px){
+    .courses{
+    grid-template-columns:repeat(2,1fr) ;
+    gap: 15px;
+    }
+}
+@media (max-width:375px){
+  .over-view-container p{
+    width: auto;
+  }
+  .nav-btns a{
+    display: none;
+  }
+  .roadmap-btns a{
+    font-size: 5px;
+  }
+
+
+  
+}
+
+
+
+
+
+
+
