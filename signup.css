@@ -1,3 +1,4 @@
+
 body{
     
     margin: 0;
@@ -9,14 +10,10 @@ body{
 }
 .sighnup{
      background-color: white;
-    width: 320px;
+    max-width: 320px;
     padding: 40px;
     border-radius: 10px;
     text-align: center;
-}
-.items{
-     border: 1px solid #ddd;
-    padding: 50px;
 }
 .sighnup h1{
      margin-bottom: 20px;
@@ -31,7 +28,7 @@ input{
     
 }
 button {
-    width: 50%;
+    width: 87%;
     padding: 12px;
     background: green;
     color: white;

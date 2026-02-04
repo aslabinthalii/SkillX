@@ -5,6 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login-SkillX</title>
     <link rel="stylesheet" href="login.css">
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    /> 
+    <link rel="stylesheet" href="login-responsive.css">
 </head>
 <body>
     <div class="login">
@@ -12,13 +17,14 @@
             Login to SkillX
         </h1>
         <form  class="items">
-        <input type="text" placeholder="username">
-       <input type="email" placeholder="email">
-       <input type="password" placeholder="password">
+        <input type="text" placeholder="username" required minlength="3">
+       <input type="email" placeholder="email" required>
+       <input type="password" placeholder="password" required minlength="6">
+       <a href="">forget username/password</a>
 
 
        <button  type="submit">Login</button>
-       <p>create an Account <a href="signup.html">click here</a></p>
+       <p>create an account <a href="signup.html">click here</a></p>
        
     </form>
     </div>

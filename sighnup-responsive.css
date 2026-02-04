@@ -1,0 +1,12 @@
+@media (max-width:500px){
+    .sighnup{
+        max-width: 60%;
+        height: 70vh;
+    }
+}
+@media (max-width:450px){
+    .sighnup{
+        max-width: 55%;
+        height: 70vh;
+    }
+}

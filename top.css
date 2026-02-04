@@ -162,8 +162,12 @@
     margin-top: 50px;
     margin-bottom: 50px;
 }
+.over-view-container p{
+    text-align: center;
+}
 .overview h1{
-    margin-left: 50px;
+    margin-left: 10px;
+    padding-left: 80px;
 }
 .overview p{
     width: 500px;
