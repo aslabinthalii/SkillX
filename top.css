@@ -3,6 +3,7 @@
     padding: 0;
     box-sizing: border-box;
     font-family: 'Poppins', sans-serif;
+
 }
 .main{
     background-image: url(./image/main.png);
@@ -11,7 +12,7 @@
 }
 .navbar{
     width: 100%;
-    position: fixed;
+    position: sticky;
     z-index: 1000;
     display: flex;
     align-items: center;
@@ -109,7 +110,7 @@
     background-image:url("./image/hero.png");
     height: 700px;
     background-size: cover;
-    background-position: center;
+    background-position:right center;
     background-repeat: no-repeat;
     display: flex;
     flex-direction: column;
@@ -136,6 +137,7 @@
     text-decoration: none;
     font-weight: bold;
     border-radius: 5px;
+    
 }
 .home p{
     color: white;
@@ -150,7 +152,7 @@
 .over-view-container{
     background-image: url(./image/MERN_Stack.png);
     background-repeat: no-repeat;
-    background-position: center;
+    background-position: left center;
     background-size: cover;  
     width: 95%;
     margin: auto;
@@ -164,6 +166,7 @@
 }
 .overview h1{
     margin-left: 50px;
+   
 }
 .overview p{
     width: 500px;
@@ -176,7 +179,7 @@
     justify-content: center; 
     align-items: center;
     gap: 20px;
-    padding: 50px;
+    padding: 20px;
 
 }
 
@@ -310,11 +313,13 @@ color: #fff;
 }
 .platform-container{
     display: grid;
-    grid-template-columns: repeat(2, minmax(250px, 350px));
+    grid-template-columns: repeat(2,1fr);
     justify-content: center;
-    gap: 80px;
-     max-width: 900px;   /* 👈 add this */
-    margin:50px auto; 
+    gap: 30px;
+     max-width: 1200px;   
+    margin: auto; 
+    width: 90%;
+   
 }
 .platform h1{
     text-align: center;
