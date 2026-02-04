@@ -1,0 +1,77 @@
+
+@media (max-width: 992px) {
+  .courses {
+    grid-template-columns: repeat(2, minmax(200px, 1fr));
+    gap: 20px;
+  }
+}
+
+
+@media (max-width: 600px) {
+  .courses {
+    grid-template-columns: 1fr;
+    gap: 15px;
+  }
+
+  .course {
+    padding: 15px;
+  }
+
+  .course h1 {
+    font-size: 18px;
+  }
+
+  .course a {
+    font-size: 13px;
+  }
+
+  .course .download,
+  .course a:last-child {
+    padding: 6px 12px;
+    font-size: 14px;
+  }
+  .platform-container {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+
+  .study {
+    padding: 18px;
+  }
+
+  .study-h h2 {
+    font-size: 18px;
+  }
+}
+@media (max-width:742px){
+  .pages{
+    display: none;
+  }
+  .home h1,.p{
+    font-size: 50px;
+    text-align: center;
+  }
+  .nav-btns a{
+    text-align: center;
+  }
+  .get-btn{
+    width: 200px;
+    margin: auto;
+  }
+}
+@media (max-width:690px){
+  .roadmap-btns{
+    font-size: 12px;
+  }
+}
+@media (max-width:558px){
+  .roadmap-btns{
+    font-size: 8px;
+  }
+
+}
+@media (max-width:427px){
+  .roadmap-btns{
+    padding: 5px;
+  }
+}
