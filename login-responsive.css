@@ -1,12 +1,32 @@
-@media (max-width:600px){
-    .login{
-        max-width:50%;
+@media (max-width: 480px) {
+    .login {
+        width: 90%;
+        padding: 25px;
+    }
 
+    input {
+        font-size: 13px;
+        height: 42px;
+    }
+
+    button {
+        font-size: 14px;
+        padding: 10px;
     }
 }
-@media (max-width:600px){
-    .login{
-        max-width:55%;
+@media (max-width: 550px) {
+    .login {
+        width: 70%;
+        padding: 25px;
+    }
 
+    input {
+        font-size: 13px;
+        height: 42px;
+    }
+
+    button {
+        font-size: 14px;
+        padding: 10px;
     }
 }

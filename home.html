@@ -9,6 +9,7 @@
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
     rel="stylesheet" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
   <link rel="stylesheet" href="responsive.css">
 </head>
 
@@ -23,23 +24,26 @@
         </div>
         <div class="nav-items">
           <div class="pages">
-            <a href="">Home</a>
+            <a href="#home">Home</a>
 
-            <a href="">Roadmap</a>
-            <a href="">study meterial</a>
+            <a href="#road-map">Roadmap</a>
+            <a href="#study">study meterial</a>
           </div>
           <div class="nav-btns">
             <a href="" class="sign-up">Login</a>
           </div>
         </div>
-        <i class="fa-solid fa-bars"></i>
+        <i class="fa-solid fa-bars" id="menu-btn"></i>
         <h1 class="x">X</h1>
         <div class="mob-nav">
-          <a href="" class="mob-nav-icon">Home</a><a href="" class="mob-nav-icon">Roadmap</a><a href="" class="mob-nav-icon">study meterials</a><a href="" class="mob-nav-icon">login</a>
+          <a href="#home" class="mob-nav-icon">Home</a>
+          <a href="#road-map" class="mob-nav-icon">Roadmap</a>
+          <a href="#study" class="mob-nav-icon">study meterials</a>
+          <a href="login.html" class="mob-nav-icon">login</a>
         </div>
 
       </nav>
-      <section class="home">
+      <section class="home" id="home">
         <h1>
           Master the
           <span>MERN</span> <br />stack with SkillX
@@ -68,7 +72,7 @@
           </p>
         </div>
       </section>
-          <section class="road-map">
+      <section class="road-map" id="road-map">
         <h1>Your MERN Learning Roadmap</h1>
 
         <div class="road-map-icons">
@@ -111,56 +115,9 @@
           <a href="" class="fa"><i class="fa-solid fa-file-pdf"></i>Download Roadmap ( PDF )</a>
         </div>
       </section>
-      
-      </section>
-      <section class="mern">
+      <section class="mern" id="study">
         <h1 class="path">Complete MERN learning path</h1>
-        <div class="courses">
-          <div class="course">
-            <h1>HTML & CSS</h1>
-            <a href="">📄 PDF: HTML & CSS Notes</a>
-            <a href="">▶️ Video: HTML & CSS Full Course</a>
-            <a href="">🛠️ Project Video: Portfolio Website</a>
-            <a href="">Dowmload PDF</a>
-        </div>
-          <div class="course">
-            <h1>
-              JavaScript
-            </h1>
-            <a href="">📄 PDF: JavaScript Notes</a>
-            <a href="">▶️ Video: JavaScript Full Course</a>
-            <a href="">🛠️ Project Video: To-Do App / Calculator App</a>
-            <a href="">Download PDF</a>
-          </div>
-          <div class="course">
-            <h1>React</h1>
-            <a href="">📄 PDF: React Notes</a>
-            <a href="">▶️ Video: React Full Course</a>
-            <a href="">🛠️ Project Video: React E-commerce Website</a>
-            <a href="">Download PDF</a>
-          </div>
-          <div class="course">
-            <h1>Node.js & Express</h1>
-            <a href="">📄 PDF: Node & Express Notes</a>
-            <a href="">▶️ Video: Node.js + Express Full Course</a>
-            <a href="">🛠️ Project Video: REST API Project</a>
-            <a href="">Download PDF</a>
-          </div>
-          <div class="course">
-            <h1>MongoDB</h1>
-            <a href="">📄 PDF: MongoDB Notes</a>
-            <a href="">▶️ Video: MongoDB Full Course</a>
-            <a href="">🛠️ Project Video: Database CRUD App</a>
-            <a href="">Download PDF</a>
-          </div>
-          <div class="course">
-            <h1>Full MERN Stack project</h1>
-            <a href="">📄 PDF: MERN Project Guide</a>
-            <a href="">▶️ Video: MERN Full Stack Course</a>
-            <a href="">🛠️ Project Video: MERN E-Commerce / Social Media App</a>
-            <a href="" class="download">Download PDF</a>
-          </div>
-        </div>
+        <div class="courses"> 
       </section>
       <section class="platform">
         <h1>

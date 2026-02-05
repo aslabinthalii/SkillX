@@ -39,8 +39,8 @@
     display: flex;
     justify-content: center;
 }
-.fa-bars{
-  display: block !important;
+.navbar #menu-btn{
+  display: block;
   font-size: 24px;
     cursor: pointer;
 }
@@ -59,13 +59,13 @@
 }
 }
 @media(max-width:750px){
-  .fa-bars{
-  display: block !important;[]
+  .navbar #menu-btn{
+  display: block;
   font-size: 24px;
     cursor: pointer;
 }
 .nav-btns a{
-  display: none !important;
+  display: none;
 }
 }
 @media(max-width :700px){
