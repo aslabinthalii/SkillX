@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Enter Reset Code</title>
+    <link rel="stylesheet" href="reset-code.css">
+</head>
+<body>
+
+<div class="container">
+    <h2>Enter Reset Code</h2>
+    <input type="text" id="code" placeholder="Enter the 6-digit code">
+    <button onclick="verifyCode()">Continue</button>
+</div>
+
+<script>
+    function verifyCode() {
+        const code = document.getElementById("code").value.trim();
+
+        if (code === "") {
+            alert("Please enter the code");
+        } else {
+            window.location.href = "new-password.html";
+        }
+    }
+</script>
+
+</body>
+</html>

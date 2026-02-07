@@ -1,17 +1,17 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>SkillX</title>
-    <link rel="stylesheet" href="top.css" />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
-      rel="stylesheet"
-    />
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>SkillX</title>
+  <link rel="stylesheet" href="top.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+    rel="stylesheet" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
   <link rel="stylesheet" href="responsive.css">
-  </head>
+</head>
 
   <body>
     <main class="main">
@@ -22,20 +22,28 @@
             ><img src="./image/logo.png" class="logo-img" alt="logo" />
             <h1>SkillX</h1></a>
         </div>
-        <div class="nav_items">
+        <div class="nav-items">
           <div class="pages">
-            <a href="">Home</a>
+            <a href="#home">Home</a>
 
-            <a href="">Roadmap</a>
-            <a href="">Videos</a>
-            <a href="">Pdf</a>
+            <a href="#road-map">Roadmap</a>
+            <a href="#study">study meterial</a>
           </div>
           <div class="nav-btns">
-            <a href="" class="sign-up">sign-up</a>
+            <a href="" class="sign-up">Login</a>
           </div>
         </div>
+        <i class="fa-solid fa-bars" id="menu-btn"></i>
+        <h1 class="x">X</h1>
+        <div class="mob-nav">
+          <a href="#home" class="mob-nav-icon">Home</a>
+          <a href="#road-map" class="mob-nav-icon">Roadmap</a>
+          <a href="#study" class="mob-nav-icon">study meterials</a>
+          <a href="login.html" class="mob-nav-icon">login</a>
+        </div>
+
       </nav>
-      <section class="home">
+      <section class="home" id="home">
         <h1>
           Master the
           <span>MERN</span> <br />stack with SkillX
@@ -45,7 +53,9 @@
           <br />
           and Node.js with real-world projects and hands-on learning.
         </p>
-        <a href="" class="get">Get Started</a>
+        <div class="get-btn">
+          <a href="" class="get">Get Started</a>
+        </div>
       </section>
       <section class="overview">
         <div class="over-view-container">
@@ -62,86 +72,52 @@
           </p>
         </div>
       </section>
-      <section class="road-map">
+      <section class="road-map" id="road-map">
         <h1>Your MERN Learning Roadmap</h1>
 
-        <img src="./image/mern_icons_row.png" alt="" />
         <div class="road-map-icons">
           <div class="ro">
+            <img class="mongo" src="./image//MongoDB.png" alt="">
             <h2 class="i">MongoDB</h2>
             <p>Databases & CRUD</p>
           </div>
           <div class="ro">
+            <img class="mongo" src="./image/Express.png" alt="">
             <h2 class="i">Express Js</h2>
             <p>Bckend & APIs</p>
           </div>
           <div class="ro">
+            <img class="mongo"  src="./image/express1.png" alt="">
             <h2 class="i">Express Js</h2>
             <p>Frontent & APIs</p>
           </div>
+    
           <div class="ro">
+            <img class="mongo"  src="./image//React.png" alt="">
             <h2 class="i">React Js</h2>
             <p>Frontent & Hooks</p>
           </div>
           <div class="ro">
+            <img class="mongo"  src="./image/Node.js.png" alt="">
             <h2 class="i">Node Js</h2>
             <p>Server development</p>
           </div>
-          <h2 class="i" style="margin-left: 100px;"">Final <br> full-Stack</h2>
-          <h2 class="i" style="margin-left: 55px;">Final full-Stack <br> Project</h2>
+          <div class="ro">
+            <img src="./image/equal.png" class="final" alt="" style="margin-bottom: 20px;">
+            <h2 class="i">Final <br> full-Stack </h2>
+          </div>
+          <div class="ro">
+            <img src="./image/success.png" alt="" class="final" style="margin-bottom: 20px;">
+            <h2 class="i">Final full-Stack <br> Project</h2>
+          </div>
         </div>
         <div class="roadmap-btns">
           <a href="" class="fa"><i class="fa-solid fa-file-pdf"></i>Download Roadmap ( PDF )</a>
         </div>
       </section>
-      <section class="mern">
+      <section class="mern" id="study">
         <h1 class="path">Complete MERN learning path</h1>
-        <div class="courses">
-          <div class="course">
-            <h1>HTML & CSS</h1>
-            <a href="">📄 PDF: HTML & CSS Notes</a>
-            <a href="">▶️ Video: HTML & CSS Full Course</a>
-            <a href="">🛠️ Project Video: Portfolio Website</a>
-            <a href="">Dowmload PDF</a>
-        </div>
-          <div class="course">
-            <h1>
-              JavaScript
-            </h1>
-            <a href="">📄 PDF: JavaScript Notes</a>
-            <a href="">▶️ Video: JavaScript Full Course</a>
-            <a href="">🛠️ Project Video: To-Do App / Calculator App</a>
-            <a href="">Download PDF</a>
-          </div>
-          <div class="course">
-            <h1>React</h1>
-            <a href="">📄 PDF: React Notes</a>
-            <a href="">▶️ Video: React Full Course</a>
-            <a href="">🛠️ Project Video: React E-commerce Website</a>
-            <a href="">Download PDF</a>
-          </div>
-          <div class="course">
-            <h1>Node.js & Express</h1>
-            <a href="">📄 PDF: Node & Express Notes</a>
-            <a href="">▶️ Video: Node.js + Express Full Course</a>
-            <a href="">🛠️ Project Video: REST API Project</a>
-            <a href="">Download PDF</a>
-          </div>
-          <div class="course">
-            <h1>MongoDB</h1>
-            <a href="">📄 PDF: MongoDB Notes</a>
-            <a href="">▶️ Video: MongoDB Full Course</a>
-            <a href="">🛠️ Project Video: Database CRUD App</a>
-            <a href="">Download PDF</a>
-          </div>
-          <div class="course">
-            <h1>Full MERN Stack project</h1>
-            <a href="">📄 PDF: MERN Project Guide</a>
-            <a href="">▶️ Video: MERN Full Stack Course</a>
-            <a href="">🛠️ Project Video: MERN E-Commerce / Social Media App</a>
-            <a href="" class="download">Download PDF</a>
-          </div>
-        </div>
+        <div class="courses"> 
       </section>
       <section class="platform">
         <h1>
@@ -205,7 +181,7 @@
                 <h1>SkillX</h1>
               </a>
             </div>
-            <p style="width: 500px">
+            <p>
               SkillX provides high-quality MERN stack courses designed for
               practical learning. From fundamentals to advanced concepts, we
               focus on real project experience, clean code practices, and
@@ -217,9 +193,7 @@
             <ul>
               <li><a href="#">Home</a></li>
               <li><a href="#">Roadmap</a></li>
-              <li><a href="#">Videos</a></li>
-              <li><a href="#">PDFs</a></li>
-              <li><a href="#">Projects</a></li>
+              <li>study meterials</li>
             </ul>
           </div>
           <div class="footer-box">
@@ -232,11 +206,12 @@
           </div>
         </div>
 
-        <div class="footer-bottom">
-          <p>© 2026 SkillX. All rights reserved.</p>
-        </div>
-      </footer>
-    </main>
-    <script src="home.js"></script>
-  </body>
+      <div class="footer-bottom">
+        <p>© 2026 SkillX. All rights reserved.</p>
+      </div>
+    </footer>
+  </main>
+  <script src="home.js"></script>
+</body>
+
 </html>

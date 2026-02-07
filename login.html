@@ -1,24 +1,35 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Login-SkillX</title>
-    <link rel="stylesheet" href="login.css">
-</head>
-<body>
+    <link rel="stylesheet" href="login.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="login-responsive.css" />
+  </head>
+  <body>
     <div class="login">
-        <h1>
-            Login to SkillX
-        </h1>
-        <form  class="items">
-        <input type="text" placeholder="username">
-       <input type="email" placeholder="email">
-       <input type="password" placeholder="password">
-
-
-       <button type="submit">Login</button>
-    </form>
+      <h1>Login to SkillX</h1>
+      <form class="items" id="loginForm">
+        <div class="field">
+          <input type="email" id="email" placeholder="email" />
+          <small class="error"></small>
+        </div>
+        <div class="field password-box">
+          <input type="password" id="password" placeholder="Password" />
+          <i class="fa-solid fa-eye toggle-password"></i>
+          <small class="error"></small>
+        </div>
+        <small class="error"></small>
+        <button type="submit">Login</button>
+        <a href="forgot.html" class="forgot">Forgotten password?</a>
+        <p>create an account <a href="signup.html">click here</a></p>
+      </form>
     </div>
-</body>
+    <script src="login.js"></script>
+  </body>
 </html>

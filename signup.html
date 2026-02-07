@@ -1,25 +1,61 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sighnup</title>
-    <link rel="stylesheet" href="signup.css">
-</head>
-<body>
-    <div class="sighnup">
-<h1>Signup to SkillX</h1>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Signup</title>
 
+    <link rel="stylesheet" href="signup.css" />
+    <link rel="stylesheet" href="sighnup-responsive.css">
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 
-<form class="items">
-    <input type="text" placeholder="first name">
-    <input type="text" placeholder="last name">
-    <input type="email" placeholder="email">
-    <input type="password" placeholder="password">
+  </head>
+  <body>
+    <div class="signup-container">
+      <h1>Signup to SkillX</h1>
 
-    <button type="submit">Signup</button>
+      <form class="form" id="signupForm">
 
-</form>
+        <div class="field">
+          <input type="text" id="firstName" placeholder="First name" />
+          <small class="error"></small>
+        </div>
+
+        <div class="field">
+          <input type="text" id="lastName" placeholder="Last name (optional)" />
+          <small class="error"></small>
+        </div>
+
+        <div class="field">
+          <input type="email" id="email" placeholder="Email" />
+          <small class="error"></small>
+        </div>
+
+        <div class="field password-box">
+          <input type="password" id="password" placeholder="Password" />
+          <i class="fa-solid fa-eye toggle-password"></i>
+          <small class="error"></small>
+        </div>
+
+        <div class="field password-box">
+          <input type="password" id="confirmPassword" placeholder="Confirm password" />
+          <i class="fa-solid fa-eye toggle-confirm"></i>
+          <small class="error"></small>
+        </div>
+
+        <button type="submit">Signup</button>
+
+        <p class="already">
+          Already have an account? <a href="login.html">Click here</a>
+        </p>
+
+      </form>
     </div>
-</body>
+
+    <script src="signup.js"></script>
+  </body>
 </html>
