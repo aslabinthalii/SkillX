@@ -16,7 +16,6 @@
         position: relative;
         z-index: 1000;
         display: flex;
-        align-items: center;
         justify-content: space-between;
         background-color: #1E3A5F;
         padding: 10px 20px;
@@ -110,11 +109,7 @@
         padding: 15px 0;
 
     }
-    .menu-btn {
-    font-size: 28px;
-    cursor: pointer;
-    z-index: 9999;
-    }
+
     .mob-nav.active{
         display: flex;
         flex-direction: column;
@@ -126,9 +121,6 @@
         text-decoration:none;
         color: #fff;
 
-    }
-    .fa-bars.hide {
-    display: none;
     }
 
     .x{

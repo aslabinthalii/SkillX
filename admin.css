@@ -1,0 +1,512 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+body {
+  background-image: url("./image/admin-background.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  padding-bottom: 50px;
+
+}
+.navbar {
+  width: 100%;
+  position: fixed;
+  position: relative;
+  z-index: 1000;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #1e3a5f;
+  padding: 10px 20px;
+}
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 100px;
+  padding-left: 20px;
+}
+.logo a {
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+}
+.logo h1 {
+  color: #fff;
+}
+.logo-img {
+  height: 30px;
+  display: block;
+}
+
+.nav-items {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  min-width: 0;
+}
+
+.nav-items a {
+  position: relative;
+  text-decoration: none;
+  display: inline-block;
+  /* color: white; */
+  padding-bottom: 5px;
+  font-size: 20px;
+  color: white;
+  border: none;
+  padding: 5px;
+  width: auto;
+  text-align: center;
+  text-decoration: none;
+  font-weight: bold;
+}
+.nav-items a::after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+  width: 0;
+  height: 3px;
+  background-color: #f97316;
+  transition: width 0.4s ease;
+  transform: translateX(-50%);
+}
+.nav-items a:hover::after {
+  width: 100%;
+}
+.nav-items img {
+  height: 60px;
+  width: 60px;
+  border-radius: 50%;
+}
+.navbar i,
+.x,
+.mob-nav {
+  display: none;
+}
+.mob-nav {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  background-color: #1e3a5f;
+  padding: 15px 0;
+}
+#menu-btn {
+  font-size: 28px;
+  cursor: pointer;
+  z-index: 9999;
+  color: #fff;
+}
+.mob-nav.active {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
+}
+.mob-nav a {
+  text-decoration: none;
+  color: #fff;
+}
+
+.x {
+  display: none;
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  font-size: 28px;
+  cursor: pointer;
+  z-index: 10000;
+  color: #fff;
+}
+.manage-users{
+    padding:30px 0px;
+}
+.m-container{
+    width: 97%;
+    margin: 15px auto;
+    background-color: #fff;
+    border-radius: 15px;
+    padding: 20px;
+      background: rgba(255, 255, 255, 0.06);
+  backdrop-filter: blur(14px);
+  border-radius: 18px;
+  padding: 20px;
+}
+.table-row{
+   display: grid;
+  grid-template-columns: 1fr 2fr;
+  align-items: flex-start;
+  padding: 14px 20px;
+  border-radius: 12px;
+  background: rgba(0, 0, 0, 0.35);
+
+
+}
+.n{
+     display: grid;
+  grid-template-columns: 1fr 2fr;
+
+  font-weight: 600;
+  opacity: 0.8;
+}
+.m-top{
+    display: flex;
+    justify-content: space-between;
+    align-items: center ;
+}
+.btn{
+
+    padding: 12px;
+    background-color: #F97316;
+    width: 150px;
+    text-align: center;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+    border: none;
+}
+.m-user-top{
+    width: 95%;
+    margin: auto;
+    /* color: #fff; */
+}
+.m-user-top h1,h4,p{
+    padding: 5px;
+}
+.m-top-left{
+    display: flex;
+    align-items: center;
+}
+.m-top-left img{
+    height: 50px;
+    width: 50px;
+}
+.m-bottom{
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    margin-top:10px;
+    width: 100%;
+}
+.m-bottom p{
+    padding-left: 10px;
+}
+
+.manage-roadmap{
+    width: 97%;
+    margin:  auto;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 15px;
+      background: rgba(255, 255, 255, 0.06);
+  backdrop-filter: blur(14px);
+  border-radius: 18px;
+  padding: 20px;
+}
+.roadmap-top{
+    display: flex;
+    justify-content: space-between;
+    align-items: center ;
+}
+.road-map-container{
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    background: rgba(0, 0, 0, 0.35);;
+    padding: 10px;
+    border-radius: 15px;
+    margin-top: 10px;
+    
+
+}
+
+.road-map-img{
+    width: 50px;
+    height: 50px;
+
+}
+.r-top-left{
+    display: flex;
+    align-items: center;
+   
+}
+.edit{
+    background-color: blueviolet;
+    color: #fff;
+    text-decoration: none;
+    padding:0px 10px;
+    border-radius: 5px;
+}
+.edit i{
+    padding: 0px 5px;
+}
+.gr{
+    background-color: green;
+}
+.a{
+    text-decoration: none;
+    color: black;
+}
+span{
+    opacity: 0.6;
+    font-size: 14px;
+    margin-left: 10px;
+}
+
+.admin-container {
+  
+  margin: 40px auto;
+  padding: 0 20px;
+  display: grid;
+  gap: 30px;
+}
+
+.admin-container .panel {
+  background: rgba(255, 255, 255, 0.06);
+  backdrop-filter: blur(14px);
+  border-radius: 18px;
+  padding: 20px;
+}
+
+
+.admin-container .panel-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 18px;
+}
+
+.admin-container .panel-header h2 {
+  font-size: 20px;
+  font-weight: 600;
+}
+
+
+.admin-container .btn.full {
+  width: 100%;
+}
+
+.admin-container .course-table {
+  display: grid;
+  gap: 12px;
+}
+
+.admin-container .table-header,
+.admin-container .table-row {
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr;
+  align-items: center;
+}
+
+.admin-container .table-header {
+  font-size: 14px;
+  opacity: 0.6;
+}
+
+.admin-container .table-row {
+  background: rgba(0, 0, 0, 0.35);
+  padding: 14px;
+  border-radius: 12px;
+}
+
+
+.admin-container .course-info {
+  display: flex;
+  gap: 12px;
+  align-items: center;
+}
+
+.admin-container .course-info img {
+  width: 50px;
+  height: 50px;
+  border-radius: 10px;
+}
+
+.admin-container .course-info h4 {
+  font-size: 15px;
+}
+
+.admin-container .course-info p {
+  font-size: 12px;
+  opacity: 0.7;
+}
+
+.admin-container .badge {
+  background: #2563eb;
+  padding: 4px 10px;
+  border-radius: 999px;
+  font-size: 12px;
+  width: fit-content;
+}
+
+.admin-container .badge.backend {
+  background: #16a34a;
+}
+
+
+.admin-container .actions {
+  display: flex;
+  gap: 8px;
+}
+
+.admin-container .course-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 16px;
+  margin-bottom: 20px;
+}
+
+.admin-container .course-card {
+  background: rgba(0, 0, 0, 0.4);
+  padding: 16px;
+  border-radius: 14px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.admin-container .course-card h3 {
+  font-size: 16px;
+}
+
+
+
+.admin-container .course-form {
+  display: grid;
+  gap: 12px;
+}
+
+.admin-container .course-form input {
+  padding: 10px;
+  border-radius: 8px;
+  border: none;
+  outline: none;
+}
+
+
+
+@media (max-width: 900px) {
+
+  .admin-container .table-header {
+    display: none;
+  }
+
+  .admin-container .table-row {
+    grid-template-columns: 1fr;
+    gap: 12px;
+  }
+
+  .admin-container .actions {
+    justify-content: flex-start;
+  }
+
+  .admin-container .course-cards {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+
+
+@media (max-width: 600px) {
+
+  .admin-container {
+    margin: 20px auto;
+  }
+
+  .admin-container .panel-header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+  }
+
+  .admin-container .btn {
+    width: 100%;
+    text-align: center;
+  }
+
+  .admin-container .actions {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .admin-container .course-info {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .admin-container .course-cards {
+    grid-template-columns: 1fr;
+  }
+}
+
+
+@media (max-width: 620px) {
+  .nav-items a,.admin-logo
+  {
+    display: none;
+  }
+  #menu-btn{
+    display: block;
+  }
+  .edit{
+    font-size: 15px;
+  }
+  .center a,.road-left p{
+    font-size: 15px;
+
+  }
+}
+@media (max-width: 554px) {
+
+ .m-bottum-left{
+    width: 40%;
+ }
+ .m-bottom-right{
+    width: 60%;
+}
+ .m-bottom p{
+    font-size: 12px;
+ }
+ .m-top-left h2{
+    font-size: 15px;
+ }
+ .road-map-container{
+    display: block;
+    text-align: center;
+ }
+ .road-left p,.road-right p{
+    display: none;
+ }
+ .road-right{
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+ }
+ .r-top-left h2{
+    font-size: 15px;
+ }
+ .btn{
+    font-size: 10px 
+ 
+}
+
+}
+
+@media(max-width:850px) {
+    .road-map-container{
+        grid-template-columns: repeat(3,1fr);
+    }
+}
+@media(max-width:572px){
+.a{
+    height: 50px;
+} 
+.edit{
+    display: block;
+    width:100px ;
+}
+}

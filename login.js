@@ -66,4 +66,4 @@ function toggleEye(icon, input) {
         icon.classList.toggle("fa-eye", !isPassword);
     });
 }
-
+toggleEye(document.querySelector(".toggle-password"), password);
