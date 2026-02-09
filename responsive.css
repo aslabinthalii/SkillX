@@ -35,17 +35,13 @@
 
 
 }
-.get-btn{
-    display: flex;
-    justify-content: center;
-}
 .navbar #menu-btn{
   display: block;
   font-size: 24px;
     cursor: pointer;
 }
 .nav-btns a{
-  display: none !important;
+  display: none;
 }
 .overview h1{
     margin-left: 10px;

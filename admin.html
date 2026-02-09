@@ -1,0 +1,240 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Admin-SkillX</title>
+    <link rel="stylesheet" href="admin.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+  </head>
+  <body>
+    <nav class="navbar">
+      <div class="logo">
+        <a href=""
+          ><img src="./image/logo.png" class="logo-img" alt="logo" />
+          <h1>SkillX</h1></a
+        >
+      </div>
+      <div class="nav-items">
+        <a href="">Courses</a>
+        <a href="" class="Dashboard">Dashboard</a>
+        <a href="">Users</a>
+
+        <img class="admin-logo" src="./image/admin-logo.png" alt="" />
+      </div>
+      <i class="fa-solid fa-bars" id="menu-btn"></i>
+      <h1 class="x">X</h1>
+      <div class="mob-nav">
+        <a href="#courses" class="mob-nav-icon">Courses</a>
+        <a href="#dashboard" class="mob-nav-icon">Dashboard</a>
+        <a href="#users" class="mob-nav-icon">Users</a>
+      </div>
+    </nav>
+    <section class="manage-users">
+      <div class="m-user-top">
+        <h1>Admin</h1>
+        <h4>Welcome back Admin</h4>
+        <p>here is the quick overview of the SkillX platform</p>
+      </div>
+      <div class="m-container">
+        <div class="m-top">
+          <div class="m-top-left">
+            <img src="./image/user.png" alt="" />
+            <h2>Manage Users</h2>
+          </div>
+          <a href="" class="btn kkc">Refresh Users</a>
+        </div>
+        <div class="m-bottom">
+            <div class="n">
+                <p><span>Name</span></p>
+                <p><span>Email</span></p>
+            </div>
+           <div class="table-row">
+                <p>michael Browmn</p>
+             <p>michaelBrowmn@gmail.com</p>
+            </div>
+            <div class="table-row">
+                <p>John Smith</p>
+                <p>johnmith@gmail.com</p>
+            </div>
+            <div class="table-row">
+                <p>Jame Doe</p>
+                
+            <p>jamedoe@gmail.com</p>
+                
+            </div>
+            <div class="table-row">
+            <p>Emily Clark</p>
+                
+        
+            <p>emilyclark@gmail.com</p>
+                
+            </div>
+      </div>
+    </section>
+    <section class="manage-roadmap">
+      <div class="roadmap-top">
+        <div class="r-top-left">
+          <img class="road-map-img" src="./image//ro-1.png" alt="" />
+          <h2>Manage Roadmap</h2>
+        </div>
+        <div class="r-top-right">
+          <a href="" class="btn">Add Roadmap</a>
+        </div>
+      </div>
+      <div class="road-map-container">
+        <div class="road-left">
+          <p style="opacity: 0.6;">Title</p>
+          <p class="a">MERN Learn path</p>
+        </div>
+        <div class="center">
+          <p style="opacity: 0.6;">PDF LINK</p>
+      
+          <a class="a" href="">http://localhost:3000</a>
+        </div>
+        <div class="road-right">
+          <p style="opacity: 0.6;">Actions</p>
+       
+
+          <a href="" class="edit">
+            <i class="fa-solid fa-pen-to-square"></i>Edit</a
+          >
+          <a href="" class="edit gr">
+            <i class="fa-solid fa-trash"></i>Delete</a
+          >
+        </div>
+      </div>
+    </section>
+    <div class="admin-container">
+      <section class="panel">
+        <div class="panel-header">
+          <h2>Manage Courses</h2>
+          <button class="btn">Add Course</button>
+        </div>
+
+        <div class="course-table">
+          <div class="table-header">
+            <span>Title</span>
+            <span>Actions</span>
+          </div>
+
+          <div class="table-row">
+            <div class="course-info">
+              <div>
+                <h4>HTML & CSS</h4>
+                <p>Learn web fundamentals</p>
+              </div>
+            </div>
+
+            <div class="actions">
+              <a href="" class="edit">
+                <i class="fa-solid fa-pen-to-square"></i>Edit</a
+              >
+              <a href="" class="edit gr">
+                <i class="fa-solid fa-trash"></i>Delete</a
+              >
+            </div>
+          </div>
+
+          <div class="table-row">
+            <div class="course-info">
+              <div>
+                <h4>JavaScript</h4>
+                <p>Interactive web apps</p>
+              </div>
+            </div>
+
+            <div class="actions">
+              <a href="" class="edit">
+                <i class="fa-solid fa-pen-to-square"></i>Edit</a
+              >
+              <a href="" class="edit gr">
+                <i class="fa-solid fa-trash"></i>Delete</a
+              >
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="panel">
+        <div class="panel-header">
+          <h2>Manage Courses</h2>
+          <button class="btn">Create Course</button>
+        </div>
+
+        <div class="course-cards">
+          <div class="course-card">
+            <h3>HTML & CSS</h3>
+            <div class="actions">
+              <a href="" class="edit">
+                <i class="fa-solid fa-pen-to-square"></i>Edit</a
+              >
+              <a href="" class="edit gr">
+                <i class="fa-solid fa-trash"></i>Delete</a
+              >
+            </div>
+          </div>
+
+          <div class="course-card">
+            <h3>JavaScript</h3>
+            <div class="actions">
+              <a href="" class="edit">
+                <i class="fa-solid fa-pen-to-square"></i>Edit</a
+              >
+              <a href="" class="edit gr">
+                <i class="fa-solid fa-trash"></i>Delete</a
+              >
+            </div>
+          </div>
+
+          <div class="course-card">
+            <h3>Node.js & Express</h3>
+            <div class="actions">
+              <a href="" class="edit">
+                <i class="fa-solid fa-pen-to-square"></i>Edit</a
+              >
+              <a href="" class="edit gr">
+                <i class="fa-solid fa-trash"></i>Delete</a
+              >
+            </div>
+          </div>
+        </div>
+
+        <form class="course-form">
+          <input type="text" placeholder="Title" />
+          <input type="url" placeholder="PDF Link" />
+          <input type="url" placeholder="Video Link" />
+          <input type="url" placeholder="Project YouTube Video Link" />
+          <button class="btn add full">Create Course</button>
+        </form>
+      </section>
+    </div>
+
+    <script>
+      let menuBtn = document.getElementById("menu-btn");
+
+      let mobNav = document.querySelector(".mob-nav");
+      let closeIcon = document.querySelector(".x");
+      (menuBtn.addEventListener("click", () => {
+        mobNav.classList.add("active");
+        menuBtn.style.display = "none";
+        closeIcon.style.display = "block";
+      }),
+        closeIcon.addEventListener("click", () => {
+          mobNav.classList.remove("active");
+          menuBtn.style.display = "block";
+          closeIcon.style.display = "none";
+        }));
+        let dashBoard=document.querySelector(".Dashboard");
+        dashBoard.addEventListener("click",()=>{
+          alert("coming soon....")
+        })
+    </script>
+  </body>
+</html>

@@ -18,7 +18,7 @@ document.addEventListener("DOMContentLoaded", () => {
   menuBtn.addEventListener("click", () => {
     mobNav.classList.add("active");
     menuBtn.style.display = "none"
-    closeBtn.style.display = ""
+    closeBtn.style.display = "block"
   });
 
 
@@ -99,9 +99,9 @@ const mernData = [
 
 let container = document.querySelector(".courses")
 
-if(container){
+if (container) {
   container.innerHTML = mernData.map((item) => {
-  return `<div class="course">
+    return `<div class="course">
     <h1>${item.title}</h1>
     <a href="${item.viewPdf}" target="_blank" rel="noopener noreferrer">${item.pdf}</a>
     <a href="${item.videoLink}" target="_blank" rel="noopener noreferrer">${item.video}</a>
@@ -111,5 +111,5 @@ if(container){
   </div>`
 
 
-}).join("");
+  }).join("");
 }
